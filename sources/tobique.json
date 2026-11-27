@@ -1,0 +1,2221 @@
+{
+  "id": "tobique",
+  "name": "Tobique Gaming Commission",
+  "jurisdiction": "Tobique First Nation",
+  "role": "Licenses remote gambling operators and suppliers under the Tobique Gaming Act.",
+  "register_url": "https://thetgc.ca/license-holders/",
+  "enforcement_url": "https://thetgc.ca/unlicensed-sites/",
+  "coverage": "Every row of the public remote gambling licence table is included, with the Commission’s B2B or B2C category and published expiry. A company can hold both. Entries that remain listed past their published expiry are flagged. The Commission’s dated website warnings identify unlicensed domains. No disciplinary decision against a named corporate licensee was established in the public materials reviewed. The empty action series cannot measure the Commission’s enforcement activity.",
+  "checked_at": "2026-11-27",
+  "actions_checked_at": "2026-11-27",
+  "licences": [
+    {
+      "entity": "3-102-087919 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-06-04.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-06-04"
+    },
+    {
+      "entity": "3-102-092239 Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-05"
+    },
+    {
+      "entity": "3-102-092436 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-05"
+    },
+    {
+      "entity": "3-102-103141 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-11-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-05"
+    },
+    {
+      "entity": "3-102-103607 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-05"
+    },
+    {
+      "entity": "3-102-112498 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-05"
+    },
+    {
+      "entity": "3-102-113216 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-05"
+    },
+    {
+      "entity": "3-102-113390 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-05"
+    },
+    {
+      "entity": "3-102-113399 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-05"
+    },
+    {
+      "entity": "3-102-113400 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-05"
+    },
+    {
+      "entity": "3-102-113966 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-11-12.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-12"
+    },
+    {
+      "entity": "3-102-116171 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-19.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-19"
+    },
+    {
+      "entity": "3-102-117951 Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-12.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-12"
+    },
+    {
+      "entity": "3-102-919484 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-03-26.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-03-26"
+    },
+    {
+      "entity": "3-102-923015 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-02-26.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-02-26"
+    },
+    {
+      "entity": "3-102-935638 Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-07-23.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-23"
+    },
+    {
+      "entity": "3-102-937148 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-08.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-08"
+    },
+    {
+      "entity": "3-102-937561 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-09-25.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-25"
+    },
+    {
+      "entity": "3-102-937894 Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-03-26.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-03-26"
+    },
+    {
+      "entity": "3-102-938586 Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-08-14.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-08-14"
+    },
+    {
+      "entity": "3-102-939534 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-08-12.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-08-12"
+    },
+    {
+      "entity": "3-102-939604 Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-16.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-16"
+    },
+    {
+      "entity": "3-102-939773 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-09-24.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-24"
+    },
+    {
+      "entity": "3-102-940881 Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-01-15.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-01-15"
+    },
+    {
+      "entity": "3-102-940905 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2026-12-04.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2026-12-04"
+    },
+    {
+      "entity": "3-102-940931 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-09-25.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-25"
+    },
+    {
+      "entity": "3-102-940972 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-09-25.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-25"
+    },
+    {
+      "entity": "3-102-942335 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-02-26.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-02-26"
+    },
+    {
+      "entity": "3-102-942972 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2026-12-11.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2026-12-11"
+    },
+    {
+      "entity": "3-102-943415 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-09-04.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-04"
+    },
+    {
+      "entity": "3-102-944089 Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-06.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-06"
+    },
+    {
+      "entity": "3-102-944432 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-07-30.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-30"
+    },
+    {
+      "entity": "3-102-944465 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-04-23.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-04-23"
+    },
+    {
+      "entity": "3-102-944616 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2026-12-18.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2026-12-18"
+    },
+    {
+      "entity": "3-102-945100 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-06.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-06"
+    },
+    {
+      "entity": "3-102-945295 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-08.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-08"
+    },
+    {
+      "entity": "3-102-946729 Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-06.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-06"
+    },
+    {
+      "entity": "3-102-947198 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-02-13.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-02-13"
+    },
+    {
+      "entity": "3-102-947967 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-04-09.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-04-09"
+    },
+    {
+      "entity": "3-102-948319 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2026-11-20.",
+      "status": "Listed; published expiry has passed",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": false,
+      "expiry_date": "2026-11-20"
+    },
+    {
+      "entity": "3-102-948319 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2026-11-20.",
+      "status": "Listed; published expiry has passed",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": false,
+      "expiry_date": "2026-11-20"
+    },
+    {
+      "entity": "3-102-948842 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2026-12-18.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2026-12-18"
+    },
+    {
+      "entity": "3-102-948925 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-29.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-29"
+    },
+    {
+      "entity": "3-102-948994 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-05-14.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-05-14"
+    },
+    {
+      "entity": "3-102-949018 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-12-04.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-12-04"
+    },
+    {
+      "entity": "3-102-949220 LLC",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-15.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-15"
+    },
+    {
+      "entity": "3-102-949290 Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-03-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-03-05"
+    },
+    {
+      "entity": "3-102-949565 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-12-02.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-12-02"
+    },
+    {
+      "entity": "3-102-949673 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-12-02.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-12-02"
+    },
+    {
+      "entity": "3-102-949728 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-01-29.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-01-29"
+    },
+    {
+      "entity": "3-102-949735 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2026-12-30.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2026-12-30"
+    },
+    {
+      "entity": "3-102-949916 Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-04-09.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-04-09"
+    },
+    {
+      "entity": "3-102-950573 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-07-09.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-09"
+    },
+    {
+      "entity": "3-102-950752 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-04-23.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-04-23"
+    },
+    {
+      "entity": "3-102-951081 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2026-12-30.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2026-12-30"
+    },
+    {
+      "entity": "3-102-951101 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2026-12-18.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2026-12-18"
+    },
+    {
+      "entity": "3-102-951151 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-12-02.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-12-02"
+    },
+    {
+      "entity": "3-102-951278 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-03-19.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-03-19"
+    },
+    {
+      "entity": "3-102-951314 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-07-09.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-09"
+    },
+    {
+      "entity": "3-102-951317 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-03-19.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-03-19"
+    },
+    {
+      "entity": "3-102-951923 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-03-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-03-05"
+    },
+    {
+      "entity": "3-102-952457 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-05-21.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-05-21"
+    },
+    {
+      "entity": "3-102-953233 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-03-26.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-03-26"
+    },
+    {
+      "entity": "3-102-953249 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-03-26.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-03-26"
+    },
+    {
+      "entity": "3-102-955347 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-08-12.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-08-12"
+    },
+    {
+      "entity": "3-102-955704 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-04-09.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-04-09"
+    },
+    {
+      "entity": "3-102-956400 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-04-09.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-04-09"
+    },
+    {
+      "entity": "3-102-956421 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-05-07.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-05-07"
+    },
+    {
+      "entity": "3-102-956566 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-06-17.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-06-17"
+    },
+    {
+      "entity": "3-102-957682 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-05-14.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-05-14"
+    },
+    {
+      "entity": "3-102-958376 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-05-07.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-05-07"
+    },
+    {
+      "entity": "3-102-958615 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-09-17.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-17"
+    },
+    {
+      "entity": "3-102-959048 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-09-03.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-03"
+    },
+    {
+      "entity": "3-102-959135 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-29.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-29"
+    },
+    {
+      "entity": "3-102-959341 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-12.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-12"
+    },
+    {
+      "entity": "3-102-959521 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-09-17.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-17"
+    },
+    {
+      "entity": "3-102-960069 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-06-04.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-06-04"
+    },
+    {
+      "entity": "3-102-960503 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-05-07.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-05-07"
+    },
+    {
+      "entity": "3-102-961565 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-07-09.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-09"
+    },
+    {
+      "entity": "3-102-962044 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-15.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-15"
+    },
+    {
+      "entity": "3-102-962757 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-19.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-19"
+    },
+    {
+      "entity": "3-102-963564 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-07-09.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-09"
+    },
+    {
+      "entity": "3-102-963848 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-05-28.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-05-28"
+    },
+    {
+      "entity": "3-102-964511 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-23.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-23"
+    },
+    {
+      "entity": "3-102-964704 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-07-09.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-09"
+    },
+    {
+      "entity": "3-102-964793 Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-08-20.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-08-20"
+    },
+    {
+      "entity": "3-102-965210 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-07-30.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-30"
+    },
+    {
+      "entity": "3-102-966062 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-09-17.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-17"
+    },
+    {
+      "entity": "3-102-967392 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-05"
+    },
+    {
+      "entity": "3-102-968317 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-08-12.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-08-12"
+    },
+    {
+      "entity": "3-102-969633 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-09-24.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-24"
+    },
+    {
+      "entity": "3-102-970587 Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-29.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-29"
+    },
+    {
+      "entity": "3-102-970925 S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-05"
+    },
+    {
+      "entity": "Abrica S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2026-12-19.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2026-12-19"
+    },
+    {
+      "entity": "Adolanos Labs S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-04-23.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-04-23"
+    },
+    {
+      "entity": "Alpeca Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-12-04.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-12-04"
+    },
+    {
+      "entity": "Amrathir Entertainment S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-05-22.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-05-22"
+    },
+    {
+      "entity": "Arkle Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-08-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-08-05"
+    },
+    {
+      "entity": "Axionyx Group S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-08-07.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-08-07"
+    },
+    {
+      "entity": "Axor Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-02-26.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-02-26"
+    },
+    {
+      "entity": "Betaine Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-09-04.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-04"
+    },
+    {
+      "entity": "BitzEnt Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-12.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-12"
+    },
+    {
+      "entity": "Blumis Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-03-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-03-05"
+    },
+    {
+      "entity": "BMBITCA Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-03-06.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-03-06"
+    },
+    {
+      "entity": "Boni Tech Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-08-15.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-08-15"
+    },
+    {
+      "entity": "Business Leader Global Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-07-09.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-09"
+    },
+    {
+      "entity": "Cascada Ventures S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-08-22.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-08-22"
+    },
+    {
+      "entity": "Cassa Bombassa Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-05-28.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-05-28"
+    },
+    {
+      "entity": "Castle Point Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-04-09.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-04-09"
+    },
+    {
+      "entity": "Castle Point Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-07-30.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-30"
+    },
+    {
+      "entity": "Ceshiroza Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-02-06.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-02-06"
+    },
+    {
+      "entity": "Cocoloco Cabana S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-24.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-24"
+    },
+    {
+      "entity": "CP Informatica E Promocao De Vendas Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-07-10.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-10"
+    },
+    {
+      "entity": "Crystal Feathers S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-06-26.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-06-26"
+    },
+    {
+      "entity": "Dblock Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-04-09.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-04-09"
+    },
+    {
+      "entity": "Delmaron S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-01-29.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-01-29"
+    },
+    {
+      "entity": "Delmaron S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-07-23.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-23"
+    },
+    {
+      "entity": "Dice Device Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2026-12-18.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2026-12-18"
+    },
+    {
+      "entity": "Dreamline Ventures S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-05-22.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-05-22"
+    },
+    {
+      "entity": "Eclipse Interactive Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-02.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-02"
+    },
+    {
+      "entity": "Eltis Satellite Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-14.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-14"
+    },
+    {
+      "entity": "Empire of Kingdoms Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-24.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-24"
+    },
+    {
+      "entity": "Enjoyni Global Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-01-29.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-01-29"
+    },
+    {
+      "entity": "Entrope S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-06-12.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-06-12"
+    },
+    {
+      "entity": "Equinoxius Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-01-29.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-01-29"
+    },
+    {
+      "entity": "Erfolg Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-02-26.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-02-26"
+    },
+    {
+      "entity": "Eventa Digital Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-02-06.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-02-06"
+    },
+    {
+      "entity": "Everstone Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-29.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-29"
+    },
+    {
+      "entity": "Everstronglink Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-04-25.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-04-25"
+    },
+    {
+      "entity": "Exitoros S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-06-12.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-06-12"
+    },
+    {
+      "entity": "Festa Software Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-05-28.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-05-28"
+    },
+    {
+      "entity": "Fortunepeak Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-01-02.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-01-02"
+    },
+    {
+      "entity": "G Solutions Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-07-24.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-24"
+    },
+    {
+      "entity": "GG Gaming S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-05-08.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-05-08"
+    },
+    {
+      "entity": "Gophoenix Solutions Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-08-29.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-08-29"
+    },
+    {
+      "entity": "Gpi Technology Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2026-12-19.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2026-12-19"
+    },
+    {
+      "entity": "Graucus Trade Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-04-24.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-04-24"
+    },
+    {
+      "entity": "Graucus Trade Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-07-18.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-18"
+    },
+    {
+      "entity": "Grey Goat Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-01-02.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-01-02"
+    },
+    {
+      "entity": "Gutta Technologies Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-02-26.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-02-26"
+    },
+    {
+      "entity": "Harrington Media Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-07-23.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-23"
+    },
+    {
+      "entity": "Higgs Sport Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-11-26.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-26"
+    },
+    {
+      "entity": "Imorix Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2026-12-11.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2026-12-11"
+    },
+    {
+      "entity": "Instada Development S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-01.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-01"
+    },
+    {
+      "entity": "International Electronic Lottery Service Center and Public Interest Investment Service Center Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-09-24.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-24"
+    },
+    {
+      "entity": "Jety Games Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-06-26.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-06-26"
+    },
+    {
+      "entity": "Jeux Craft Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2026-12-11.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2026-12-11"
+    },
+    {
+      "entity": "Kornelity S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2026-12-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2026-12-05"
+    },
+    {
+      "entity": "Kryztral Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-02-26.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-02-26"
+    },
+    {
+      "entity": "Legasta Technologies S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-03-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-03-05"
+    },
+    {
+      "entity": "Limitex Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-07-24.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-24"
+    },
+    {
+      "entity": "Malang Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-08-12.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-08-12"
+    },
+    {
+      "entity": "Marquee Holdings Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-08-14.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-08-14"
+    },
+    {
+      "entity": "Marquis Element Interactive S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-03-20.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-03-20"
+    },
+    {
+      "entity": "Matrix Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-01-29.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-01-29"
+    },
+    {
+      "entity": "Mauna Lani Enterprise Corp",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-08-27.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-08-27"
+    },
+    {
+      "entity": "Mero Interactive Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-29.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-29"
+    },
+    {
+      "entity": "Metlait S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-04-16.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-04-16"
+    },
+    {
+      "entity": "Metlait S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-09-25.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-25"
+    },
+    {
+      "entity": "Mint Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-05-28.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-05-28"
+    },
+    {
+      "entity": "MJMotion Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-01-15.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-01-15"
+    },
+    {
+      "entity": "Modern Vibes Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2026-12-19.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2026-12-19"
+    },
+    {
+      "entity": "Monarch Innovative Labs Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-09-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-05"
+    },
+    {
+      "entity": "Nalate S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-07-09.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-09"
+    },
+    {
+      "entity": "Napoleon Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2026-12-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2026-12-05"
+    },
+    {
+      "entity": "Neptune Projects S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-08-22.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-08-22"
+    },
+    {
+      "entity": "Nexygen Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-01-29.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-01-29"
+    },
+    {
+      "entity": "Nobiksat (CS) S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-08-08.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-08-08"
+    },
+    {
+      "entity": "Nooma Ventures S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-05-22.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-05-22"
+    },
+    {
+      "entity": "Northfield Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-12.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-12"
+    },
+    {
+      "entity": "Novapulse Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-04-09.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-04-09"
+    },
+    {
+      "entity": "Novatrix S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-03-13.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-03-13"
+    },
+    {
+      "entity": "Novatrix S.R.L (B2B)",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-09-11.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-11"
+    },
+    {
+      "entity": "Oceanus Mysteria S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-06-12.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-06-12"
+    },
+    {
+      "entity": "Orgona LLC",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-07-25.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-25"
+    },
+    {
+      "entity": "Overcooked Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-09-25.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-25"
+    },
+    {
+      "entity": "Pacific Ventures Group S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-03-06.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-03-06"
+    },
+    {
+      "entity": "Planeta Plateado S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-04-09.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-04-09"
+    },
+    {
+      "entity": "Prontogabriela S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-12-04.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-12-04"
+    },
+    {
+      "entity": "Quirius Technologies LLC",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-08-14.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-08-14"
+    },
+    {
+      "entity": "Rainforest Nine One One S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2026-12-12.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2026-12-12"
+    },
+    {
+      "entity": "Rapiso Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-12-02.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-12-02"
+    },
+    {
+      "entity": "Reelfun Gaming Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-01-15.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-01-15"
+    },
+    {
+      "entity": "Regaltech Solutions Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-07-17.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-17"
+    },
+    {
+      "entity": "Ricky 168 Ventures Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-05-22.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-05-22"
+    },
+    {
+      "entity": "Rocketship Ventures S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-05-15.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-05-15"
+    },
+    {
+      "entity": "Saphirix Solutions S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-08-07.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-08-07"
+    },
+    {
+      "entity": "Savalum Tech Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-09-24.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-24"
+    },
+    {
+      "entity": "SDC Studio B.V.",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-10-23.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-23"
+    },
+    {
+      "entity": "Silvervale Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-29.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-29"
+    },
+    {
+      "entity": "Skywin S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2026-11-26.",
+      "status": "Listed; published expiry has passed",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": false,
+      "expiry_date": "2026-11-26"
+    },
+    {
+      "entity": "Solvara Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-11-12.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-11-12"
+    },
+    {
+      "entity": "Spinstack Solutions S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-09-11.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-11"
+    },
+    {
+      "entity": "Spinstudio Management Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-10-15.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-15"
+    },
+    {
+      "entity": "Spinstudio Management Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-15.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-15"
+    },
+    {
+      "entity": "Sportetiquette S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-06-12.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-06-12"
+    },
+    {
+      "entity": "Superbluck Global Limited (B2B)",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2B remote gambling. Register observed 2026-11-27. Published expiry 2027-01-29.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-01-29"
+    },
+    {
+      "entity": "Superbluck Global Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-07-17.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-17"
+    },
+    {
+      "entity": "Tarnelux Holdings Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-07-10.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-07-10"
+    },
+    {
+      "entity": "Tekuno Technologies S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-03-27.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-03-27"
+    },
+    {
+      "entity": "Terra Force S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-31.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-31"
+    },
+    {
+      "entity": "TG One Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-10.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-10"
+    },
+    {
+      "entity": "Threegaming Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2026-12-19.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2026-12-19"
+    },
+    {
+      "entity": "Thrillwave Ventures S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-05-22.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-05-22"
+    },
+    {
+      "entity": "Tobix Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-02-06.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-02-06"
+    },
+    {
+      "entity": "Trimex Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-06-17.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-06-17"
+    },
+    {
+      "entity": "Tronabriz Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-03.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-03"
+    },
+    {
+      "entity": "Truly Inspired Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-06-17.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-06-17"
+    },
+    {
+      "entity": "Ultima Entertainment Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2026-12-18.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2026-12-18"
+    },
+    {
+      "entity": "Vanguardo Entertainment Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-03-06.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-03-06"
+    },
+    {
+      "entity": "Vargspire Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-03-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-03-05"
+    },
+    {
+      "entity": "Vesperano NV S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-06-17.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-06-17"
+    },
+    {
+      "entity": "Vientorojo Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-10-29.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-10-29"
+    },
+    {
+      "entity": "Vireon Tech Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-01-29.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-01-29"
+    },
+    {
+      "entity": "Volcan Explosions Ventures S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-05-22.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-05-22"
+    },
+    {
+      "entity": "Wild Technology Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-04-09.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-04-09"
+    },
+    {
+      "entity": "Winnbell S.R.L",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-09-05.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-05"
+    },
+    {
+      "entity": "Zen Estratega BV Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-06-06.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-06-06"
+    },
+    {
+      "entity": "Zentyx Ltd",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-04-09.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-04-09"
+    },
+    {
+      "entity": "Zoritron Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "B2C remote gambling. Register observed 2026-11-27. Published expiry 2027-09-11.",
+      "status": "Listed; expiry falls on or after observation",
+      "url": "https://thetgc.ca/license-holders/",
+      "active": true,
+      "expiry_date": "2027-09-11"
+    }
+  ],
+  "actions": [],
+  "source_versions": {
+    "licences": {
+      "observed": "2026-11-27",
+      "url": "https://thetgc.ca/license-holders/",
+      "sha256": "527f5d4c523bddc61e2f150d5b8e125f9316a80f10462b345a8327d0df19b383"
+    }
+  }
+}

@@ -1,16 +1,16 @@
-"""Exercise the built starter at a project subpath in Chromium."""
+"""Exercise the published operator directory and filtered records at a project subpath."""
+import json
+import os
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-import shutil
+import re
 import tempfile
-import sys
 import threading
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import expect, sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "scripts"))
-from build import build
+SLUG = "gamblingregulatorwatch"
 
 
 class QuietHandler(SimpleHTTPRequestHandler):
@@ -19,55 +19,82 @@ class QuietHandler(SimpleHTTPRequestHandler):
 
 
 def main():
-    screenshots = ROOT / "browser-checks"
-    screenshots.mkdir(exist_ok=True)
-    with tempfile.TemporaryDirectory() as temporary:
-        shutil.copytree(ROOT / "dist", Path(temporary) / "example-tool")
-        example = Path(temporary) / "preset-fixture"
-        example.mkdir()
-        shutil.copytree(ROOT / "web", example / "web")
-        shutil.copytree(ROOT / "examples/common-pages", example / "common-pages")
-        for name in ("tool.json", "README.md"):
-            shutil.copyfile(ROOT / name, example / name)
-        build(example)
-        server = ThreadingHTTPServer(("127.0.0.1", 0), partial(QuietHandler, directory=temporary))
+    dist = ROOT / "dist"
+    edition = json.loads((dist / "data/edition.json").read_text(encoding="utf-8"))
+    operators = edition["operators"]
+    regulators = edition["regulators"]
+    assert operators and regulators
+    person = next((item for item in operators if item["actions"] and item["licences"]), operators[0])
+    with tempfile.TemporaryDirectory() as temp:
+        (Path(temp) / SLUG).symlink_to(dist, target_is_directory=True)
+        handler = partial(QuietHandler, directory=temp)
+        server = ThreadingHTTPServer(("127.0.0.1", 0), handler)
         threading.Thread(target=server.serve_forever, daemon=True).start()
+        url = f"http://127.0.0.1:{server.server_port}/{SLUG}/"
         try:
-            with sync_playwright() as p:
-                browser = p.chromium.launch()
-                page = browser.new_page(viewport={"width": 1280, "height": 1000})
-                errors = []
-                page.on("pageerror", lambda error: errors.append(str(error)))
-                page.goto(f"http://127.0.0.1:{server.server_port}/example-tool/")
-                assert page.locator("#input").input_value() == "Halifax\nLangley\nHalifax\nVancouver"
-                assert page.locator("#output").input_value() == "Halifax\nLangley\nVancouver"
-                assert "1 duplicate removed" in page.locator("#status").inner_text()
-                page.locator("#input").fill('<img src=x onerror="alert(1)">\n<img src=x onerror="alert(1)">')
-                assert page.locator("#output").input_value() == '<img src=x onerror="alert(1)">'
-                assert page.locator("img").count() == 0
-                page.locator("#clear").click()
-                assert page.locator("#output").input_value() == ""
-                assert "Paste one item per line" in page.locator("#status").inner_text()
-                page.locator("#sample").click()
-                assert page.locator("#output").input_value() == "Halifax\nLangley\nVancouver"
-                page.screenshot(path=str(screenshots / "desktop.png"), full_page=True)
-                page.set_viewport_size({"width": 390, "height": 844})
-                page.goto(f"http://127.0.0.1:{server.server_port}/example-tool/")
-                assert page.locator("#input").bounding_box()["y"] < 844
-                assert page.locator("#output").input_value() == "Halifax\nLangley\nVancouver"
-                assert page.evaluate("document.documentElement.scrollWidth <= window.innerWidth")
-                page.screenshot(path=str(screenshots / "mobile.png"), full_page=True)
-                page.goto(f"http://127.0.0.1:{server.server_port}/preset-fixture/dist/remove-duplicate-cities/")
-                assert page.locator("#output").input_value() == "Vancouver\nHalifax\nCharlottetown"
-                page.locator("#input").fill("Surrey\nSurrey\nOttawa")
-                assert page.locator("#output").input_value() == "Surrey\nOttawa"
-                page.get_by_role("button", name="Restore example").click()
-                assert page.locator("#output").input_value() == "Vancouver\nHalifax\nCharlottetown"
-                assert not errors, errors
+            with sync_playwright() as pw:
+                browser = pw.chromium.launch(executable_path=os.environ.get("CHROMIUM_PATH"))
+                for width, height, name in [(1280, 900, "desktop"), (390, 844, "mobile")]:
+                    page = browser.new_page(viewport={"width": width, "height": height})
+                    errors = []
+                    page.on("pageerror", lambda e: errors.append(str(e)))
+                    page.goto(url)
+                    expect(page.locator("#operator-workspace")).to_be_visible()
+                    feature = page.locator(".featured-record")
+                    expect(feature).to_contain_text(re.compile(r"(?<!\d)20\d{2}(?!\d)"))
+                    assert feature.locator("a").count() > 0
+                    first_link = feature.locator("a").first.bounding_box()
+                    assert first_link["y"] + first_link["height"] <= height
+                    assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
+                    screenshots = ROOT / "browser-checks"
+                    screenshots.mkdir(exist_ok=True)
+                    page.screenshot(path=str(screenshots / f"{name}.png"), full_page=True)
+
+                    query = page.get_by_role("searchbox", name="Operator or regulator")
+                    query.fill(person["name"])
+                    row = page.locator("#operator-list article").filter(has=page.get_by_role("link", name=person["name"], exact=True)).first
+                    expect(row).to_be_visible()
+                    row.get_by_role("button").click()
+                    expect(page.locator("#operator-preview h3")).to_have_text(person["name"])
+                    expect(page).to_have_url(re.compile(r"[?&]operator="))
+                    permalink = page.url
+                    expect(page.locator("#operator-preview a.profile")).to_have_attribute("href", f"./records/{person['slug']}/")
+                    page.reload()
+                    expect(page.locator("#operator-preview h3")).to_have_text(person["name"])
+                    expect(page).to_have_url(permalink)
+                    assert (dist / "records" / person["slug"] / "index.html").is_file()
+                    page.locator("#operator-preview button").click()
+
+                    alias_case = next(((op, licence["name"]) for op in operators for licence in op["licences"]
+                                       if licence.get("name") and licence["name"].casefold() != op["name"].casefold()), None)
+                    if alias_case:
+                        legal, alias = alias_case
+                        query.fill(alias)
+                        named = page.locator("#operator-list article").filter(has=page.get_by_role("link", name=legal["name"], exact=True))
+                        expect(named.first).to_contain_text(alias)
+                    query.fill("unmatched search -- 987654321")
+                    expect(page.locator("#operator-list")).to_contain_text("No operator")
+                    expect(page.locator("#export")).to_be_disabled()
+                    page.locator("#reset").click()
+                    expect(page.locator("#export")).to_be_enabled()
+                    with page.expect_download() as downloading:
+                        page.locator("#export").click()
+                    assert downloading.value.suggested_filename.endswith(".csv")
+                    query.fill(regulators[0]["name"])
+                    expect(page.locator("#regulator-matches")).to_contain_text(regulators[0]["name"])
+                    assert page.locator("#regulator-matches a").count() > 0
+                    page.locator("#compare-a").select_option(regulators[-1]["id"])
+                    expect(page.locator("#comparison thead th").nth(1)).to_have_text(regulators[-1]["name"])
+                    if len(regulators) > 1:
+                        assert page.locator("#compare-a").input_value() != page.locator("#compare-b").input_value()
+                    expect(page.locator("#comparison")).to_contain_text("Distinct eligible cases")
+                    assert not errors, errors
+                    page.close()
                 browser.close()
-            print("Browser checks passed: project subpath, sample, clear, safe text and mobile layout")
         finally:
             server.shutdown()
+            server.server_close()
+    print("Verified first use, exact entity, source links, deep link, filters, export and regulator comparison at desktop and phone widths.")
 
 
 if __name__ == "__main__":

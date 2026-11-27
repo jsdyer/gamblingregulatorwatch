@@ -1,78 +1,81 @@
-name: Browser tool · Check and publish
+name: Regulatory sources and Pages
 on:
   pull_request:
   push:
     branches: [main]
+  schedule:
+    - cron: '43 9 * * 5'
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: regulator-edition-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-    outputs:
-      publish: ${{ steps.identity.outputs.publish }}
+    timeout-minutes: 45
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v7
         with:
-          persist-credentials: false
+          persist-credentials: ${{ (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main' }}
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - uses: actions/setup-node@v6
         with:
           node-version: '24'
-      - name: Test the application
-        run: node --test tests/*.test.mjs
-      - name: Test the builder
-        run: python3 -m unittest discover -s tests -v
-      - name: Build the static application
-        run: python3 scripts/build.py
-      - name: Check whether the tool has been initialized
-        id: identity
-        env:
-          REPOSITORY_NAME: ${{ github.event.repository.name }}
+      - name: Install dependencies
+        run: python -m pip install -r collectors/requirements.txt -r tests/browser-requirements.txt
+      - name: Refresh official regulatory sources
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: python scripts/refresh.py
+      - name: Validate evidence and build pages
         run: |
-          python3 - <<'PY'
-          import json, os
-          tool_id = json.load(open('tool.json'))['id']
-          ready = tool_id != 'coolcode-tool-template' and tool_id == os.environ['REPOSITORY_NAME']
-          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
-              output.write(f'publish={str(ready).lower()}\n')
-          PY
-      - name: Install browser test dependencies
+          python -m unittest discover -s tests -v
+          node --test tests/*.test.mjs
+          python scripts/build.py
+          python scripts/check_pages.py
+      - name: Check the search and comparison in Chromium
         run: |
-          python3 -m pip install -r tests/browser-requirements.txt
-          python3 -m playwright install --with-deps chromium
-      - name: Check application in a browser
-        run: python3 tests/browser_smoke.py
-      - name: Save browser screenshots
-        if: always()
-        uses: actions/upload-artifact@v7
-        with:
-          name: browser-checks
-          path: browser-checks/
-          retention-days: 7
-      - name: Save reviewable site
-        uses: actions/upload-artifact@v7
-        with:
-          name: browser-tool-preview
-          path: dist/
-          include-hidden-files: true
-          retention-days: 7
-      - name: Package Pages site
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && steps.identity.outputs.publish == 'true'
+          python -m playwright install --with-deps chromium
+          python tests/browser_smoke.py
+      - name: Preserve the validated source edition
+        if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'
+        run: |
+          git add sources/
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Refresh public regulatory register snapshots'
+            git push origin HEAD:main
+          fi
+      - name: Prepare GitHub Pages
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v5
         with:
           path: dist
+      - name: Flag retained sources
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        id: result
+        run: |
+          python - <<'PY'
+          import json, os
+          receipt = json.load(open('sources/check.json'))
+          failed = receipt['failed_sources'] + receipt.get('failed_notice_indexes', [])
+          if failed:
+              print('::warning::Retained earlier captures for '+', '.join(failed))
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:
+              print('partial='+str(bool(failed)).lower(), file=f)
+          PY
+    outputs:
+      partial: ${{ steps.result.outputs.partial }}
   deploy:
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && needs.build.outputs.publish == 'true'
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-    concurrency:
-      group: github-pages
-      cancel-in-progress: false
     permissions:
       pages: write
       id-token: write
@@ -82,3 +85,9 @@ jobs:
     steps:
       - uses: actions/deploy-pages@v5
         id: publish
+  report-partial-refresh:
+    needs: [build, deploy]
+    if: needs.build.outputs.partial == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - run: exit 1

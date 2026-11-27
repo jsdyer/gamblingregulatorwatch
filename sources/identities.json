@@ -1,0 +1,82 @@
+[
+  {
+    "names": [
+      "3-102-942972 SRL",
+      "3-102-942972 S.R.L"
+    ],
+    "urls": [
+      "https://gamingcommission.ca/interactive-gaming/permit-holders/",
+      "https://thetgc.ca/license-holders/"
+    ],
+    "basis": "Both official registers use the same numbered corporate name, 3-102-942972. They differ only in punctuation of the S.R.L. suffix."
+  },
+  {
+    "names": [
+      "3-102-948925 SRL",
+      "3-102-948925 S.R.L"
+    ],
+    "urls": [
+      "https://gamingcommission.ca/interactive-gaming/permit-holders/",
+      "https://thetgc.ca/license-holders/"
+    ],
+    "basis": "Both official registers use the same numbered corporate name, 3-102-948925. They differ only in punctuation of the S.R.L. suffix."
+  },
+  {
+    "names": [
+      "Sportetiquette SRL",
+      "Sportetiquette S.R.L"
+    ],
+    "urls": [
+      "https://gamingcommission.ca/interactive-gaming/permit-holders/",
+      "https://thetgc.ca/license-holders/"
+    ],
+    "basis": "Both official registers give the same distinctive name and corporate suffix. Only the punctuation of S.R.L. differs."
+  },
+  {
+    "names": [
+      "Apollo Entertainment Limited",
+      "Apollo Entertainment Ltd",
+      "Apollo Entertainment Ltd."
+    ],
+    "urls": [
+      "https://www.igamingontario.ca/en/operator/operators?field_legal_entity_name_target_id=All&field_offerings_value=All&items_per_page=100",
+      "https://www.gamblingcommission.gov.uk/public-register/business/detail/trading-names/38620",
+      "https://www.agco.ca/en/news/agco-issues-100000-penalties-apollo-entertainment-violations-internet-gaming-responsible"
+    ],
+    "basis": "The Ontario directory and British account 38620 share the corporate name and the Casino Classic, Grand Mondial, Luxury Casino, Yukon Gold and Zodiac brands. The Ontario penalty notice uses Ltd. with a final period."
+  },
+  {
+    "names": [
+      "Videoslots Limited",
+      "Videoslots Ltd."
+    ],
+    "urls": [
+      "https://www.igamingontario.ca/en/operator/operators?field_legal_entity_name_target_id=All&field_offerings_value=All&items_per_page=100",
+      "https://www.gamblingcommission.gov.uk/public-register/business/detail/domain-names/39380",
+      "https://kansspelautoriteit.nl/videoslots-limited"
+    ],
+    "basis": "The corporate names differ only by the abbreviation of Limited. Both official registers identify Videoslots and Mr Vegas operations, using the respective national domains. The Dutch regulator names Videoslots Limited in its penalty and objection decision."
+  },
+  {
+    "names": [
+      "L & L Europe Limited",
+      "L&L Europe Limited"
+    ],
+    "urls": [
+      "https://www.gamblingcommission.gov.uk/public-register/business/detail/domain-names/38758",
+      "https://authorisation.mga.org.mt/verification.aspx?company=5394ea22-0083-4f8a-9815-f7650c8145be&details=1&lang=EN"
+    ],
+    "basis": "British account 38758 and Malta licence MGA/B2C/211/2011 give the same apartment 7 in Mosta, postcode MST 9026, and the same group of domains, including quickbet.co.uk, pubcasino.co.uk, casinocasino.com and yeticasino.com. The legal names differ only in spacing."
+  },
+  {
+    "names": [
+      "Rush Gaming Limited",
+      "Rush Gaming Ltd"
+    ],
+    "urls": [
+      "https://www.mga.org.mt/licensee-hub/enforcement-register/09-01-2024-suspension-of-authorisation-for-rush-gaming-ltd-c-80159/",
+      "https://www.mga.org.mt/licensee-hub/enforcement-register/11-03-2024-cancellation-of-authorisation-for-rush-gaming-limited-c-80159/"
+    ],
+    "basis": "The MGA suspension effective January 9, 2024 and the cancellation effective March 11, 2024 name the same company registration C 80159 and licence MGA/B2C/701/2019. One notice abbreviates Limited."
+  }
+]

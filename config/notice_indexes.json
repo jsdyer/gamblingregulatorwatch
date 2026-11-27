@@ -1,0 +1,53 @@
+[
+  {
+    "regulator": "mga",
+    "name": "Malta Gaming Authority",
+    "parser": "wordpress",
+    "index_url": "https://www.mga.org.mt/licensee-hub/enforcement-register/",
+    "endpoint": "https://www.mga.org.mt/wp-json/wp/v2/niu_enforcement",
+    "url_prefix": "/licensee-hub/enforcement-register/",
+    "date_from_title": true,
+    "coverage": "Every individually linked entry in the MGA enforcement register. The date printed in a notice title is shown when supplied. Older entries can be amended or duplicated on the official site.",
+    "review_links": {
+      "https://www.mga.org.mt/cancellation-of-authorisation-for-genesis-global-limited-c-65325/": "mga-genesis-cancellation-2024",
+      "https://www.mga.org.mt/cancellation-of-authorisation-for-rush-gaming-limited-c-80159/": "mga-rush-cancellation-2024",
+      "https://www.mga.org.mt/licensee-hub/enforcement-register/13-11-2026-cancellation-of-authorisation-for-vittoriosa-consultancy-limited-c-73106/": "mga-vittoriosa-cancellation-2026",
+      "https://www.mga.org.mt/licensee-hub/enforcement-register/16-09-2026-suspension-of-authorisation-for-condor-malta-limited-c-70089/": "mga-condor-suspension-2026",
+      "https://www.mga.org.mt/licensee-hub/enforcement-register/29-05-2025-notice-of-cancellation-of-authorisation-for-oddsfly-limited-c-57484/": "mga-oddsfly-notice-2025",
+      "https://www.mga.org.mt/licensee-hub/enforcement-register/cancellation-of-authorisation-for-goldwin-ltd-c-79820/": "mga-goldwin-cancellation-2025",
+      "https://www.mga.org.mt/licensee-hub/enforcement-register/cancellation-of-authorisation-of-winzon-group-limited-c-89900/": "mga-winzon-cancellation-2026",
+      "https://www.mga.org.mt/suspension-of-authorisation-for-goldwin-ltd-c-79820/": "mga-goldwin-suspension-2024",
+      "https://www.mga.org.mt/suspension-of-authorisation-for-rush-gaming-ltd-c-80159/": "mga-rush-suspension-2024"
+    }
+  },
+  {
+    "regulator": "kahnawake",
+    "name": "Kahnawà:ke Gaming Commission",
+    "parser": "wordpress",
+    "index_url": "https://gamingcommission.ca/category/interactive-gaming/",
+    "endpoint": "https://gamingcommission.ca/wp-json/wp/v2/posts",
+    "category": 4,
+    "include": "\\b(suspen\\w*|revoc\\w*|revok\\w*|terminat\\w*|unlicen[cs]ed|not licen[cs]ed|unauthori[sz]ed|invalidat\\w*|refus\\w*|fraud|warnings?|sanctions?|penalt\\w*|show cause|enforcement|public advisory|advisory notice)\\b",
+    "coverage": "Interactive-gaming category posts whose titles identify licensing actions, enforcement, warnings or unauthorized operations. The date is the Commission’s publication date. Other news and notices filed outside this category may be absent.",
+    "review_links": {
+      "https://gamingcommission.ca/vip-entertainment-technologies-inc-revocation-of-client-provider-authorization/": "kgc-vip-2024-revocation"
+    }
+  },
+  {
+    "regulator": "agco",
+    "name": "Alcohol and Gaming Commission of Ontario",
+    "parser": "agco",
+    "index_url": "https://www.agco.ca/en/lottery-and-gaming/news-lottery-and-gaming",
+    "url_prefix": "/en/news/",
+    "include": "\\b(penalt\\w*|penali[sz]\\w*|fines?|fined|revok\\w*|revoc\\w*|settle\\w*|suspen\\w*|enforcement action|show cause|order to pay|registration cancelled|notice of proposal)\\b",
+    "exclude": "\\b(schedule of|policy on|guidance on) (monetary )?penalt\\w*|\\blottery (seller|retail(er)?|registration)|\\b(retail lottery|convenience store)\\b",
+    "coverage": "Selected titles from all publication types in the Ontario lottery and gaming news index, including settlements, proposals and penalty updates. The selection covers online and land-based gaming and omits title-identified retail lottery licensing and general penalty schedules. Dates are publication dates."
+  },
+  {
+    "regulator": "acma",
+    "name": "Australian Communications and Media Authority",
+    "parser": "manual",
+    "index_url": "https://www.acma.gov.au/investigations-online-gambling-providers",
+    "coverage": "ACMA investigations require manual review. Native retrieval of the investigations index returned HTTP 503 during validation. The online register and selected enforcement records are collected separately."
+  }
+]

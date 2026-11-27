@@ -1,0 +1,553 @@
+{
+  "id": "kahnawake",
+  "name": "Kahnawà:ke Gaming Commission",
+  "jurisdiction": "Mohawk Territory of Kahnawà:ke",
+  "role": "Licenses and regulates gaming conducted within and from Kahnawà:ke.",
+  "register_url": "https://gamingcommission.ca/interactive-gaming/permit-holders/",
+  "enforcement_url": "https://gamingcommission.ca/news/",
+  "coverage": "The interactive operator and software-provider tables are grouped by named holder. The hosting licensee appears separately. The operator and software-provider scope records preserve the date displayed on the permit page. Individual issue and expiry dates are unavailable for these entries. The observation date records when a name was visible. The decisions are selected public notices for three named holders. Two-step cases count once, and a voluntary departure in good standing is shown as a separate outcome.",
+  "checked_at": "2026-11-27",
+  "actions_checked_at": "2026-11-27",
+  "licences": [
+    {
+      "entity": "3-102-936774 SRL",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "3-102-939256 SRL",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "3-102-941348 SRL",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "3-102-942972 SRL",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "3-102-948925 SRL",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Abenaki Council of Wolinak",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Anunnaki Elite Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Arbor L.K. Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Aveazure SRL",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "BQC Consulting Gmbh",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Baytree Interactive Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Bleat Enterprises SRL",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Brazo Tech Ltd.",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Brickvale Media Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "CCR Enterprise Gaming Ltd.",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Dcentral Enterprises SRL",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Elarion Ltd.",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Electraworks Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "EverEdge Marketing Solutions SRL",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "FGS Software Solutions SRL",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Filavuns LLC",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Fresh Horizons Ltd.",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Futurix MS Trading Dynamics Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "GAC Group Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Galan Operations SRL",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Ganadu Gaming Ltd.",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Green Cari Marketing LLC",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Greenpot Services Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Indigo Nova Ltd.",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Kanovera Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Luckycat Spin Inc.",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Lufilight Ltd.",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Monkey 9 Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Moravente SRL",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "New Dev Co SRL",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Osauhing Tonybet",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Parlayheroes Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "PrimeVision Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Puretech International Ltd.",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Rock Entertainment Limitada",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Rock Swift Group Ltd.",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Shiva Entertainment Online S.R.L.",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "SmartWave Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "SpectraWeb Services SRL",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Sportetiquette SRL",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Sports Market Group Inc.",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Starscream Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Starshine Global Services Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Starsten Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "TD Global Inc.",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Tribold Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "WagerCraft Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Interactive operator. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Relax Gaming International Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Casino software provider. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "VSTechnology Limited",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Casino software provider. Page update label 2023-09-28.",
+      "status": "Listed in permit directory",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    },
+    {
+      "entity": "Mohawk Internet Technologies",
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "scope": "Hosting facility. Sole IGL held since 1999, according to the source observed 2026-11-27.",
+      "status": "Listed as sole interactive gaming licensee",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/"
+    }
+  ],
+  "actions": [
+    {
+      "id": "kgc-polar-2026-suspension",
+      "entity": "Polar Ventures SDRL",
+      "date": "2026-10-06",
+      "title": "Commission suspends client-provider authorization",
+      "type": "Licence suspension",
+      "status": "Suspension took effect",
+      "url": "https://gamingcommission.ca/polar-ventures-sdrl-suspension-of-client-provider-authorization/",
+      "summary": "The Commission issued a show-cause notice and suspended the authorization effective 2026-09-29. A later notice records the disposition.",
+      "effective_date": "2026-09-29",
+      "case_id": "kgc-polar-2026",
+      "eligible": true,
+      "foreign_penalty": true
+    },
+    {
+      "id": "kgc-polar-2026-termination",
+      "entity": "Polar Ventures SDRL",
+      "date": "2026-11-25",
+      "title": "Commission accepts voluntary termination",
+      "type": "Voluntary termination",
+      "status": "Voluntarily terminated in good standing",
+      "url": "https://gamingcommission.ca/polar-ventures-sdrl-voluntary-termination-of-client-provider-authorization/",
+      "summary": "The operator requested termination. The Commission accepted the request and explicitly confirmed that the operator left in good standing.",
+      "effective_date": "2026-11-25",
+      "case_id": "kgc-polar-2026",
+      "eligible": false,
+      "foreign_penalty": false
+    },
+    {
+      "id": "kgc-einrai-2026-suspension",
+      "entity": "Einrai Ltd.",
+      "date": "2026-03-03",
+      "title": "Commission suspends client-provider authorization",
+      "type": "Licence suspension",
+      "status": "Suspension took effect",
+      "url": "https://gamingcommission.ca/einrai-ltd-suspension-of-client-provider-authorization/",
+      "summary": "The Commission issued a show-cause notice and suspended the authorization effective 2026-03-03. A later notice records the disposition.",
+      "effective_date": "2026-03-03",
+      "case_id": "kgc-einrai-2026",
+      "eligible": true,
+      "foreign_penalty": true
+    },
+    {
+      "id": "kgc-einrai-2026-revocation",
+      "entity": "Einrai Ltd.",
+      "date": "2026-04-09",
+      "title": "Commission revokes client-provider authorization",
+      "type": "Licence revocation",
+      "status": "Authorization revoked",
+      "url": "https://gamingcommission.ca/einrai-ltd-revocation-of-client-provider-authorization/",
+      "summary": "The Commission passed a resolution revoking the authorization effective 2026-04-02. The interval runs from the earlier effective suspension to the effective revocation. Neither notice dates the start of an investigation.",
+      "effective_date": "2026-04-02",
+      "start_date": "2026-03-03",
+      "start_basis": "Effective suspension, as dated in the earlier public notice",
+      "start_url": "https://gamingcommission.ca/einrai-ltd-suspension-of-client-provider-authorization/",
+      "case_id": "kgc-einrai-2026",
+      "eligible": true,
+      "foreign_penalty": true
+    },
+    {
+      "id": "kgc-vip-2024-suspension",
+      "entity": "VIP Entertainment Technologies Inc.",
+      "date": "2024-11-14",
+      "title": "Commission suspends client-provider authorization",
+      "type": "Licence suspension",
+      "status": "Suspension took effect",
+      "url": "https://gamingcommission.ca/vip-entertainment-technologies-inc-suspension-of-client-provider-advisory-noticeauthorization/",
+      "summary": "The Commission issued a show-cause notice and suspended the authorization effective 2024-11-13. A later notice records the disposition.",
+      "effective_date": "2024-11-13",
+      "case_id": "kgc-vip-2024",
+      "eligible": true,
+      "foreign_penalty": true
+    },
+    {
+      "id": "kgc-vip-2024-revocation",
+      "entity": "VIP Entertainment Technologies Inc.",
+      "date": "2024-12-19",
+      "title": "Commission revokes client-provider authorization",
+      "type": "Licence revocation",
+      "status": "Authorization revoked",
+      "url": "https://gamingcommission.ca/wp-content/uploads/2024/12/Advisory-Notice-Revocation-of-License-VIP-Entertainment-Technologies-Inc_.pdf",
+      "summary": "The Commission passed a resolution revoking the authorization effective 2024-12-18. The interval runs from the earlier effective suspension to the effective revocation. Neither notice dates the start of an investigation.",
+      "effective_date": "2024-12-18",
+      "start_date": "2024-11-13",
+      "start_basis": "Effective suspension, as dated in the earlier public notice",
+      "start_url": "https://gamingcommission.ca/vip-entertainment-technologies-inc-suspension-of-client-provider-advisory-noticeauthorization/",
+      "case_id": "kgc-vip-2024",
+      "eligible": true,
+      "foreign_penalty": true
+    }
+  ],
+  "source_versions": {
+    "licences": {
+      "observed": "2026-11-27",
+      "url": "https://gamingcommission.ca/interactive-gaming/permit-holders/",
+      "sha256": "4ecb319fedda930bfd09814233551ebd05862b653d1e09ab8ed57a396e132733",
+      "as_of": "2023-09-28"
+    }
+  }
+}

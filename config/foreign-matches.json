@@ -1,0 +1,116 @@
+[
+  {
+    "entity": "Videoslots Limited",
+    "regulators": [
+      "agco",
+      "ukgc"
+    ],
+    "urls": [
+      "https://www.igamingontario.ca/en/operator/operators?field_legal_entity_name_target_id=All&field_offerings_value=All&items_per_page=100",
+      "https://www.gamblingcommission.gov.uk/public-register/business/detail/domain-names/39380"
+    ],
+    "basis": "Ontario lists Videoslots Ltd. for Mr.Vegas and Videoslots. British account 39380, Videoslots Limited, operates the matching Mr Vegas and Videoslots domains. Ltd. abbreviates Limited."
+  },
+  {
+    "entity": "Videoslots Limited",
+    "regulators": [
+      "mga",
+      "ukgc"
+    ],
+    "urls": [
+      "https://authorisation.mga.org.mt/verification.aspx?company=ff43afe7-05e6-4e58-92fa-f2bccbd973bc&details=1&lang=EN",
+      "https://www.gamblingcommission.gov.uk/public-register/business/detail/domain-names/39380"
+    ],
+    "basis": "Malta licence MGA/CRP/258/2014 and British account 39380 name Videoslots Limited at the same Pietà head office, The Space, levels 2 and 3, Alfred Craig Street, PTA 1320."
+  },
+  {
+    "entity": "Videoslots Limited",
+    "regulators": [
+      "ksa",
+      "ukgc"
+    ],
+    "urls": [
+      "https://kansspelautoriteit.nl/sites/default/files/15167_01-281-259_sanctiebesluit_videoslots_ov.pdf",
+      "https://www.gamblingcommission.gov.uk/public-register/business/detail/domain-names/39380"
+    ],
+    "basis": "Dutch case 15167 identifies the operator of www.videoslots.com as Videoslots Limited. British account 39380 names the same company and lists that exact domain."
+  },
+  {
+    "entity": "Videoslots Limited",
+    "regulators": [
+      "ksa",
+      "mga"
+    ],
+    "urls": [
+      "https://kansspelautoriteit.nl/sites/default/files/15167_01-281-259_sanctiebesluit_videoslots_ov.pdf",
+      "https://authorisation.mga.org.mt/verification.aspx?company=ff43afe7-05e6-4e58-92fa-f2bccbd973bc&details=1&lang=EN"
+    ],
+    "basis": "Dutch case 15167 identifies www.videoslots.com and Videoslots Limited in Malta. Malta licence MGA/CRP/258/2014 names Videoslots Limited and includes videoslots.com in its authorised websites."
+  },
+  {
+    "entity": "Videoslots Limited",
+    "regulators": [
+      "agco",
+      "ksa"
+    ],
+    "urls": [
+      "https://www.igamingontario.ca/en/operator/operators?field_legal_entity_name_target_id=All&field_offerings_value=All&items_per_page=100",
+      "https://kansspelautoriteit.nl/sites/default/files/15167_01-281-259_sanctiebesluit_videoslots_ov.pdf",
+      "https://www.gamblingcommission.gov.uk/public-register/business/detail/domain-names/39380"
+    ],
+    "basis": "The Dutch case and British account 39380 identify Videoslots Limited and www.videoslots.com. The Ontario directory assigns the Videoslots and Mr.Vegas brands to Videoslots Ltd.; the same British account lists both domains."
+  },
+  {
+    "entity": "NSUS Limited",
+    "regulators": [
+      "agco",
+      "ukgc"
+    ],
+    "urls": [
+      "https://www.igamingontario.ca/en/operator/operators?field_legal_entity_name_target_id=All&field_offerings_value=All&items_per_page=100",
+      "https://www.gamblingcommission.gov.uk/news/article/online-casino-nsus-limited-fined-gbp672-000"
+    ],
+    "basis": "Both regulators name NSUS Limited as the operator of GGPoker: the Ontario directory lists its Canadian site and the British decision identifies its British site."
+  },
+  {
+    "entity": "WHG (International) Limited",
+    "regulators": [
+      "ksa",
+      "ukgc"
+    ],
+    "urls": [
+      "https://kansspelautoriteit.nl/whg-international-limited",
+      "https://www.gamblingcommission.gov.uk/public-register/business/detail/domain-names/39225"
+    ],
+    "basis": "The Dutch dossier names WHG (International) Limited and www.williamhill.com. British account 39225 attributes that exact domain to the same corporate name."
+  },
+  {
+    "entity": "Dabble Sports Pty Ltd",
+    "regulators": [
+      "acma",
+      "ukgc"
+    ],
+    "urls": [
+      "https://www.acma.gov.au/check-if-gambling-operator-legal",
+      "https://www.gamblingcommission.gov.uk/public-register/business/detail/domain-names/65711",
+      "https://www.acma.gov.au/sites/default/files/2026-09/Enforceable%20Undertaking%20from%20Dabble%20Sports%20Pty%20Ltd_Redacted.pdf",
+      "https://abr.business.gov.au/ABN/View?abn=26641982425",
+      "https://api.gleif.org/api/v1/lei-records/984500A77AE08DFP8F44"
+    ],
+    "basis": "The ACMA undertaking identifies ABN 26 641 982 425. Australia’s business register links it to company 641 982 425. The GLEIF record for that company gives the same unit C106, 19 Kitchener Drive, Darwin head office as British account 65711. Both gambling regulators identify the Dabble brand."
+  },
+  {
+    "entity": "Condor Malta Limited",
+    "regulators": [
+      "mga",
+      "ukgc"
+    ],
+    "urls": [
+      "https://authorisation.mga.org.mt/verification.aspx?company=9d971e88-8e16-4751-b548-77358f11892e&details=1&lang=EN",
+      "https://www.gamblingcommission.gov.uk/public-register/business/detail/domain-names/50094",
+      "https://www.mga.org.mt/suspension-of-authorisation-for-condor-ltd-c-79820/",
+      "https://web.archive.org/web/20260930055500/https://authorisation.mga.org.mt/verification.aspx?lang=EN&company=9d971e88-8e16-4751-b548-77358f11892e&details=1"
+    ],
+    "basis": "The September 30, 2026 archived Malta seal for MGA/B2C/340/2016 and British account 50094 attribute 24bettle.com, b-bets.com, casinosieger.com and rembrandtcasino.com to Condor Malta Limited. The Malta suspension notice identifies company C 70089 and the same licence. Its current seal records cancellation and omits the domains."
+  }
+]

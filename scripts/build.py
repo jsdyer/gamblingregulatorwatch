@@ -1,136 +1,204 @@
 #!/usr/bin/env python3
-"""Build a browser tool using Python's standard library; no network required."""
+"""Render the explorer and source-linked, crawlable pages from local snapshots."""
+from datetime import date
 from html import escape
-import json
 from pathlib import Path
-import re
+import json
 import shutil
-import tempfile
-from urllib.parse import urlsplit
-
+from tempfile import TemporaryDirectory
+from xml.etree import ElementTree as ET
+from model import ROOT, load_edition, read, url
 from search_metadata import add_search_metadata
+from directories import write_directories, write_notices
 
-ROOT = Path(__file__).resolve().parents[1]
-SLUG = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*")
-
-
-def metadata(root=ROOT):
-    tool = json.loads((root / "tool.json").read_text(encoding="utf-8"))
-    required = {"id", "title", "description", "category", "tags", "icon", "url", "source", "hosting", "access", "data_info"}
-    if not isinstance(tool, dict) or set(tool) != required:
-        raise ValueError("tool.json has missing or unknown fields")
-    for key in required - {"tags", "data_info"}:
-        if not isinstance(tool[key], str) or not tool[key].strip():
-            raise ValueError(f"tool.json: {key} must be a nonempty string")
-    if not SLUG.fullmatch(tool["id"]) or tool["url"] != f'/{tool["id"]}/' or tool["hosting"] != "project":
-        raise ValueError("Use a lowercase tool ID, matching /id/ URL and project hosting")
-    if not isinstance(tool["tags"], list) or not all(isinstance(t, str) and t.strip() for t in tool["tags"]):
-        raise ValueError("tags must be an array of nonempty strings")
-    if tool["access"] != "browser":
-        raise ValueError("This starter produces an immediately usable browser tool; use access: browser")
-    info = tool["data_info"]
-    if (not isinstance(info, dict) or info.get("mode") not in ("snapshot", "live", "local", "reference", "mixed")
-            or not isinstance(info.get("detail"), str) or not info["detail"].strip()):
-        raise ValueError("Describe the tool's inputs for its homepage card in data_info")
-    guide = (root / "README.md").read_text(encoding="utf-8")
-    begin, end = "<!-- coolcode:guide -->", "<!-- /coolcode:guide -->"
-    if guide.count(begin) != 1 or guide.count(end) != 1 or not guide.partition(begin)[2].partition(end)[0].strip() or guide.index(begin) > guide.index(end):
-        raise ValueError("Include a practical README note between the coolcode:guide markers")
-    source = urlsplit(tool["source"])
-    if source.scheme != "https" or not source.hostname or source.username is not None or any(c.isspace() for c in tool["source"]) or "\\" in tool["source"]:
-        raise ValueError("source must be an HTTPS URL without credentials or whitespace")
-    return tool
+BASE = "https://coolcode.ca/gamblingregulatorwatch/"
+NAME = "Gambling Regulator Watch"
 
 
-def read_common_pages(root):
-    directory = root / "common-pages"
-    path = directory / "manifest.json"
-    if not path.exists():
-        return []
-    if directory.is_symlink() or path.is_symlink():
-        raise ValueError("Common-use definitions must not be symlinks")
-    entries = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(entries, list):
-        raise ValueError("Expected a list of common-use pages")
-    seen = set()
-    for entry in entries:
-        if not isinstance(entry, dict) or set(entry) != {"slug", "title", "description"}:
-            raise ValueError("Each common-use page needs a slug, title and description")
-        if not all(isinstance(v, str) and v.strip() for v in entry.values()):
-            raise ValueError("Empty or invalid common-use page field")
-        slug = entry["slug"]
-        if not SLUG.fullmatch(slug) or slug in seen:
-            raise ValueError("Common-use slugs must be safe, unique directory names")
-        seen.add(slug)
-    return entries
+def e(value):
+    return escape(str(value), quote=True)
 
 
-def render_page(page, tool, asset_prefix):
-    page = page.replace("{{ASSET_PREFIX}}", asset_prefix)
-    for token, key in {"TITLE": "title", "DESCRIPTION": "description", "TOOL_ID": "id", "SOURCE_URL": "source"}.items():
-        placeholder = "{{" + token + "}}"
-        if placeholder not in page:
-            raise ValueError(f"Missing template placeholder: {placeholder}")
-        page = page.replace(placeholder, escape(tool[key], quote=True))
-    slug = tool["id"]
-    on_coolcode = (
-        slug != "coolcode-tool-template"
-        and tool["source"].rstrip("/") == f"https://github.com/jsdyer/{slug}"
-    )
-    reporting = {
-        "{{VISIT_COUNTER}}": '<script defer src="/assets/tool-metrics.js" referrerpolicy="no-referrer"></script>',
-        "{{ISSUE_LINK}}": f'<a href="https://coolcode.ca/report/?tool={slug}" referrerpolicy="no-referrer">Report an issue</a>',
-    }
-    for placeholder, markup in reporting.items():
-        if placeholder not in page:
-            raise ValueError(f"Missing template placeholder: {placeholder}")
-        page = page.replace(placeholder, markup if on_coolcode else "")
-    if re.search(r"\{\{[A-Z_]+\}\}", page):
-        raise ValueError("Unresolved template placeholder in web/index.html")
-    return add_search_metadata(page, tool)
+def link(href, label):
+    return f'<a href="{e(href)}">{e(label)}</a>'
 
 
-def build(root=ROOT):
-    tool = metadata(root)
-    output = root / "dist"
-    if output.is_symlink():
-        raise ValueError("dist must not be a symlink")
-    web = root / "web"
-    if web.is_symlink() or any(p.is_symlink() for p in web.rglob("*")):
-        raise ValueError("web/ must not contain symlinks")
-    with tempfile.TemporaryDirectory(prefix="coolcode-tool-") as temporary:
-        stage = Path(temporary) / "site"
-        shutil.copytree(web, stage)
-        index = stage / "index.html"
-        page = index.read_text(encoding="utf-8")
-        common = read_common_pages(root)
-        links = ' · '.join(f'<a href="./{entry["slug"]}/">{escape(entry["title"])}</a>' for entry in common)
-        marker = "<!-- common-use-links -->"
-        if common and marker not in page:
-            raise ValueError("Add the common-use-links marker to the main page")
-        page = page.replace(marker, f'<nav aria-label="Common uses">{links}</nav>' if common else "")
-        index.write_text(render_page(page, tool, "./"), encoding="utf-8")
-        for entry in common:
-            directory = stage / entry["slug"]
-            if directory.exists():
-                raise ValueError(f"Common-use route collides with web content: {entry['slug']}")
-            directory.mkdir()
-            definition = root / "common-pages" / (entry["slug"] + ".html")
-            if definition.is_symlink():
-                raise ValueError("Common-use HTML must not be a symlink")
-            preset = dict(tool, title=entry["title"], description=entry["description"],
-                          url=f'{tool["url"]}{entry["slug"]}/')
-            body = render_page(definition.read_text(encoding="utf-8"), preset, "../")
-            (directory / "index.html").write_text(body, encoding="utf-8")
-        (stage / ".nojekyll").touch()
-        if output.exists():
-            shutil.rmtree(output)
-        shutil.copytree(stage, output)
-    print(f'Built dist/ for {tool["id"]}')
+def official(value, label):
+    return link(url(value), label)
 
 
-if __name__ == "__main__":
-    try:
-        build()
-    except (OSError, ValueError) as exc:
-        raise SystemExit(f"Build failed: {exc}")
+def put(path, content):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+
+
+def dump(path, obj):
+    put(path, json.dumps(obj, ensure_ascii=False, separators=(",", ":")) + "\n")
+
+
+def shell(path, title, desc, body):
+    root = "../" * path.count("/")
+    return f'''<!doctype html>
+<html lang="en-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{e(title)} · {NAME}</title><meta name="description" content="{e(desc)}">
+<link rel="canonical" href="{BASE}{path}"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}">
+<link rel="stylesheet" href="{root}style.css"><link rel="icon" href="{root}favicon.svg">
+<script defer src="/assets/tool-metrics.js" referrerpolicy="no-referrer"></script></head>
+<body data-tool-id="gamblingregulatorwatch"><a class="skip" href="#main">Skip to evidence</a>
+<header class="masthead"><div class="wrap masthead-inner">{link(root, NAME)} {link("https://coolcode.ca/", "CoolCode.ca")}</div></header>
+<main class="wrap profile" id="main">{body}</main>
+<footer class="wrap">{link(root+"records/", "All operator records")} · {link(root+"#coverage", "Sources and coverage")} · {link("https://coolcode.ca/report/?tool=gamblingregulatorwatch", "Report a correction")}</footer></body></html>'''
+
+
+def action_text(a):
+    return a.get("summary") or a["title"]
+
+
+def profile(op, regs):
+    summary = []
+    if op["actions"]:
+        latest = op["actions"][0]
+        summary.append(f'{regs[latest["regulator"]]["name"]} published the most recent included action on {latest["date"]}.')
+    if op["licences"]:
+        names = sorted({regs[l["regulator"]]["name"] for l in op["licences"]})
+        summary.append(f'Licence evidence appears in {", ".join(names)}.')
+    return " ".join(summary)
+
+
+def profile_page(op, regs):
+    summary = profile(op, regs)
+    path = "records/" + op["slug"] + "/"
+    rows = [f'<h1>{e(op["name"])}</h1><p>{e(summary)}</p><p>{link("../../?operator="+op["slug"]+"#operators","Open this operator in the explorer")}</p>']
+    if op["identity"]:
+        identity = op["identity"]
+        refs = " · ".join(official(href, f"Identity source {i}") for i, href in enumerate(identity["urls"],1))
+        rows.append(f'<h2>Legal-name match</h2><p>{e(identity["basis"])} {refs}</p>')
+    if op["foreign"]:
+        rows.append('<h2>Foreign penalty and later licence evidence</h2><p>Each pair names the same legal entity. A later observation establishes its published status on that date. It cannot establish uninterrupted licensing or what a regulator knew.</p><ul>')
+        pairs = set()
+        for pair in op["foreign"]:
+            a, l = pair["action"], pair["licence"]
+            uid = (a["url"], l["url"], l["date"],l.get("licence_id"))
+            if uid in pairs:
+                continue
+            pairs.add(uid)
+            proof = pair["identity"]
+            refs = " · ".join(official(href, f"Source {i}") for i,href in enumerate(proof["urls"],1))
+            certified = l.get("status_as_of") or l["date"]
+            rows.append(f'<li>{official(a["url"], regs[a["regulator"]]["name"]+" · "+a["date"])} — {e(a["title"])}. {official(l["url"], regs[l["regulator"]]["name"]+" · "+certified)} — {e(l["status"])} ({e(l["date_basis"])}). <small>{e(proof["basis"])} {refs}</small></li>')
+        rows.append('</ul>')
+    if op["delays"]:
+        rows.append("<h2>Time to effective revocation</h2>")
+        for d in op["delays"]:
+            a = d["action"]
+            before = " "+official(a["start_url"],"Starting notice") if a.get("start_url") else ""
+            rows.append(f'<p>{d["days"]} days from {e(a["start_basis"])} ({e(a["start_date"])}) to effective revocation ({e(a["effective_date"])}). {official(a["url"],"Decision")}{before}</p>')
+    for a in op["actions"]:
+        if a.get("start_date") and a.get("interval_end") and a.get("end_basis"):
+            n = (date.fromisoformat(a["interval_end"]) - date.fromisoformat(a["start_date"])).days
+            rows.append(f'<h2>Documented case interval</h2><p>{n} days from {e(a["start_basis"])} ({e(a["start_date"])}) to {e(a["end_basis"])} ({e(a["interval_end"])}). {official(a["url"],"Official notice")}</p>')
+    if op["actions"]:
+        rows.append(f'<h2>Published enforcement records</h2><p>{op["case_count"]} distinct qualifying case outcome(s) within the included sources. Multiple decisions can concern different conduct.</p>')
+        for a in op["actions"]:
+            rows.append(f'<article><h3>{e(a["title"])}</h3><p>{e(regs[a["regulator"]]["name"])} · {e(a["date"])} · {e(a["status"])}</p><p>{e(action_text(a))}</p><p>{official(a["url"],"Read the official record")}</p></article>')
+    if op["licences"]:
+        rows.append('<h2>Licence records</h2><ul>')
+        for l in op["licences"]:
+            detail = " · ".join(str(x) for x in [l.get("name"), l.get("scope"), l.get("licence_id"), l.get("date"), l.get("date_basis"), ("Source effective "+l["status_as_of"]) if l.get("status_as_of") else None] if x)
+            rows.append(f'<li><strong>{e(regs[l["regulator"]]["name"])}</strong> — {e(l["entity"])} · {e(l["status"])}. {e(detail)}. {official(l["url"],"Licensing source")}</li>')
+        rows.append("</ul>")
+    rows.append("<h2>Coverage for this profile</h2>")
+    for rid in dict.fromkeys(r["regulator"] for r in op["actions"] + op["licences"]):
+        reg = regs[rid]
+        rows.append(f'<p><strong>{e(reg["name"])}</strong> — {e(reg["coverage"])} {official(reg["enforcement_url"],"Enforcement source") if reg.get("enforcement_url") else ""}</p>')
+    return shell(path, op["name"]+" — licence and enforcement records", summary, "".join(rows))
+
+
+def render(stage, ed):
+    if not ed["operators"] or not ed["built_at"]:
+        raise ValueError("A dated, populated edition is required")
+    regs = {r["id"]:r for r in ed["regulators"]}
+    shutil.copytree(ROOT/"web",stage,dirs_exist_ok=True)
+    dump(stage/"data/edition.json",ed)
+    status = dict(edition_date=ed["built_at"], **ed["stats"])
+    check = ROOT/"sources/check.json"
+    if check.exists():
+        status.update(read(check))
+    dump(stage/"data/status.json",status)
+    pages = ["records/"] + write_directories(stage,ed,status,shell,link,put)
+    inbox = ROOT/"sources/notice-index.json"
+    more = link("./regulators/","Browse regulator profiles")
+    if inbox.exists():
+        write_notices(stage,read(inbox),shell,link,put)
+        more += " · "+link("./notices/","Official notices awaiting review")
+    ops = ed["operators"]
+    op = next((p for p in ops if p["foreign"]),next(p for p in ops if p["actions"]))
+    # Prefer the documented Ontario/Great Britain example while both receipts exist.
+    for candidate in ops:
+        if candidate["name"].casefold() == "videoslots limited" and candidate["foreign"]:
+            op = candidate
+            break
+    pair = next((p for p in op["foreign"] if p["licence"]["regulator"] == "agco" and p["action"]["regulator"] == "ukgc"),
+                op["foreign"][0] if op["foreign"] else None)
+    a = pair["action"] if pair else op["actions"][0]
+    feature_text = a["title"]+". "+regs[a["regulator"]]["name"]+" published this record on "+a["date"]+"."
+    if a.get("amount") and a.get("currency"):
+        feature_text = regs[a["regulator"]]["name"]+" recorded a "+a["currency"]+" "+format(a["amount"],",")+" "+a["type"].lower()+"."
+    if pair:
+        lic = pair["licence"]
+        if lic["regulator"] == "agco":
+            feature_text += " iGaming Ontario listed the same operator in its "+(lic.get("status_as_of") or lic["date"])+" directory."
+        else:
+            feature_text += " A later licence record from "+regs[lic["regulator"]]["name"]+" names the same company."
+    feature = (f'<span class="feature-label">Featured operator record</span><time datetime="{e(a["date"])}">{e(a["date"])}</time>'
+               f'<h2>{e(op["name"])}</h2><p>{e(feature_text)}</p>{link("./records/"+op["slug"]+"/","Read the operator record →")}')
+    html = (stage/"index.html").read_text()
+    if html.count("{{FEATURE}}") != 1:
+        raise ValueError("Missing featured evidence slot")
+    tool = read(ROOT/"tool.json")
+    more += " · "+link("./data/status.json","Source check status")+" · "+link("./data/edition.json","Download source-linked data")
+    schedule = "Register checks are scheduled for Fridays at 09:43 UTC. Each source keeps its own observation date."
+    if status.get("failed_sources"):
+        retained = ", ".join(regs[k]["name"] for k in status["failed_sources"] if k in regs)
+        schedule += " The "+status["last_attempt"][:10]+" check retained the previous snapshot for "+retained+"."
+    more = e(schedule)+"</p><p>"+more
+    related = '<p><strong>Related investigation.</strong> '+link("https://coolcode.ca/registrarwatch/","Explore phishing reports by domain registrar")+' to see how a different industry measures reports against portfolio size.</p>'
+    if 'rel="icon"' not in html:
+        html=html.replace("</head>",'<link rel="icon" href="./favicon.svg"></head>')
+    html = html.replace("</main>", '<section class="coverage"><div><h2>Sources and updates</h2></div><div class="coverage-copy"><p>'+more+'</p>'+related+'</div></section></main>')
+    html = add_search_metadata(html.replace("{{FEATURE}}",feature),tool,category="ReferenceApplication")
+    put(stage/"index.html",html)
+    for op in ops:
+        page = "records/"+op["slug"]+"/"
+        put(stage/page/"index.html",profile_page(op,regs))
+        # Curate discovery around substantive decisions or cross-register evidence.
+        if op["actions"] or len({l["regulator"] for l in op["licences"]})>1:
+            pages.append(page)
+    ordered = sorted(ops,key=lambda op:op["name"].casefold())
+    anchors = [f'<li>{link("./"+op["slug"]+"/",op["name"])}</li>' for op in ordered]
+    body = (f'<h1>Gambling operator records</h1><p>Find licence entries and regulatory decisions for {len(ops):,} named entities. Latest included source snapshot {e(ed["built_at"])}.</p>'
+            f'<p>{link("../#operators","Search and filter records")} · {link("../#coverage","Read the coverage notes")}</p><ul class="record-index">'+''.join(anchors)+'</ul>')
+    put(stage/"records/index.html",shell("records/","Gambling operator records by legal name","Browse published gambling licences and enforcement records by legal entity.",body))
+    root = ET.Element("urlset",xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
+    for path in sorted(pages):
+        ET.SubElement(ET.SubElement(root,"url"),"loc").text=BASE+path
+    put(stage/"sitemap.xml",ET.tostring(root,encoding="unicode",xml_declaration=True))
+    put(stage/".nojekyll","")
+    if not (stage/"favicon.svg").exists():
+        shutil.copyfile(ROOT/"assets/favicon.svg",stage/"favicon.svg")
+    print(f'{len(ops)} linked profiles, {len(pages)} sitemap entries')
+
+
+def main():
+    ed = load_edition()
+    with TemporaryDirectory(dir=ROOT) as tmp:
+        stage = Path(tmp)/"site"
+        render(stage,ed)
+        destination = ROOT/"dist"
+        if destination.exists():
+            shutil.rmtree(destination)
+        stage.rename(destination)
+
+
+if __name__=="__main__":
+    main()
