@@ -4,6 +4,7 @@ Explore public gambling licence and enforcement records by legal entity, trading
 
 <!-- coolcode:guide -->
 Search by legal entity or a source-listed trading name. A profile links each licence and published action to its issuing authority. Compare the coverage and dates before interpreting repeat cases or documented revocation intervals.
+Look up an exact website in the Tobique and Malta warning lists. The result preserves each regulator’s date, source and listing category.
 <!-- /coolcode:guide -->
 
 BML Group Limited’s Malta licence profile links to its historical corporate-registry entry in ICIJ and to the [CoolCode Field Note on Canadian connections in offshore records](https://coolcode.ca/field-notes/reading-offshore-records/). Corporate-registry appearances are stored separately from enforcement data.
@@ -57,3 +58,5 @@ Set `eligible` explicitly on an action after verifying its outcome. Reuse its `c
 The build creates static paths under `records/` for the named entities. The child sitemap selects the directory, authority profiles and profiles with enforcement or cross-register evidence. Filter queries and alternate spellings use the same profile. The hub's root sitemap can discover new eligible results after its initial project registration.
 
 Search terms and filters are processed in the browser. The live CoolCode deployment uses the shared aggregate tool counter. See the operator's source record to verify a specific question or report a correction through the site's issue link.
+
+The Friday source refresh checks the official Malta and Tobique warning lists independently. On a failed download or layout change, the previous list retains its original check date. The search runs locally over those saved lists.

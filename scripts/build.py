@@ -9,6 +9,7 @@ from tempfile import TemporaryDirectory
 from xml.etree import ElementTree as ET
 from model import ROOT, load_edition, read, url
 from search_metadata import add_search_metadata
+from warning_pages import render_warnings
 from directories import write_directories, write_notices
 
 BASE = "https://coolcode.ca/gamblingregulatorwatch/"
@@ -107,6 +108,8 @@ def profile_page(op, regs, note):
             detail = " · ".join(str(x) for x in [l.get("name"), l.get("scope"), l.get("licence_id"), l.get("date"), l.get("date_basis"), ("Source effective "+l["status_as_of"]) if l.get("status_as_of") else None] if x)
             rows.append(f'<li><strong>{e(regs[l["regulator"]]["name"])}</strong> — {e(l["entity"])} · {e(l["status"])}. {e(detail)}. {official(l["url"],"Licensing source")}</li>')
         rows.append("</ul>")
+    if any(a.get("id") == "kgc-true-north-revocation" for a in op["actions"]):
+        rows.append('<p>'+link("https://coolcode.ca/domain-biography/records/truenorth-bet/", "Explore the dated TrueNorth.bet domain history")+'</p>')
     if note:
         rows.append(f'<h2>Historical company record</h2><p>{e(note["summary"])} {official(note["source"],"Original ICIJ entry")} · {official(note["url"],note["title"])}.</p>')
         if trail := note.get("trail"):
@@ -131,7 +134,10 @@ def render(stage, ed):
     dump(stage/"data/status.json",status)
     pages = ["records/"] + write_directories(stage,ed,status,shell,link,put)
     inbox = ROOT/"sources/notice-index.json"
-    more = link("./regulators/","Browse regulator profiles")
+    warnings = read(ROOT/"sources/warnings.json")
+    dump(stage/"data/warnings.json", warnings)
+    pages.extend(render_warnings(stage,warnings,shell,link,put))
+    more = link("./records/warnings/","Check a website against published domain warnings")+" · "+link("./regulators/","Browse regulator profiles")
     if inbox.exists():
         write_notices(stage,read(inbox),shell,link,put)
         more += " · "+link("./notices/","Official notices awaiting review")
@@ -186,7 +192,7 @@ def render(stage, ed):
     ordered = sorted(ops,key=lambda op:op["name"].casefold())
     anchors = [f'<li>{link("./"+op["slug"]+"/",op["name"])}</li>' for op in ordered]
     body = (f'<h1>Gambling operator records</h1><p>Find licence entries and regulatory decisions for {len(ops):,} named entities. Latest included source snapshot {e(ed["built_at"])}.</p>'
-            f'<p>{link("../#operators","Search and filter records")} · {link("../#coverage","Read the coverage notes")}</p><ul class="record-index">'+''.join(anchors)+'</ul>')
+            f'<p>{link("./warnings/","Search regulator domain warnings")} · {link("../#operators","Search and filter records")} · {link("../#coverage","Read the coverage notes")}</p><ul class="record-index">'+''.join(anchors)+'</ul>')
     put(stage/"records/index.html",shell("records/","Gambling operator records by legal name","Browse published gambling licences and enforcement records by legal entity.",body))
     root = ET.Element("urlset",xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
     for path in sorted(pages):

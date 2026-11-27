@@ -4,14 +4,51 @@
   "task_label": "Gambling Operator Licences and Enforcement Records",
   "description": "Look up a gambling operator, trace regulatory decisions and compare licence records across jurisdictions.",
   "category": "explorers",
-  "tags": ["gambling", "regulators", "licences", "enforcement", "operators", "public records"],
+  "tags": [
+    "gambling",
+    "regulators",
+    "licences",
+    "enforcement",
+    "operators",
+    "public records",
+    "domain warnings"
+  ],
   "icon": "landmark",
   "url": "/gamblingregulatorwatch/",
   "source": "https://github.com/jsdyer/gamblingregulatorwatch",
   "hosting": "project",
   "access": "browser",
   "sync_manifest": true,
-  "result_directory": {"path": "records/", "additional_paths": ["regulators/"], "title": "Gambling licences and enforcement decisions by operator"},
-  "dataset": {"title": "Gambling licence and enforcement evidence", "file":"data/edition.json", "format":"JSON"},
-  "data_info": {"mode": "snapshot", "cadence": "Weekly", "detail": "Public licensing registers, regulatory decisions and annual reports. Source coverage and appeal status are shown for each authority.", "probes": [{"label":"Latest source snapshot","url":"https://coolcode.ca/gamblingregulatorwatch/data/status.json","path":["edition_date"],"count_at":{"path":["operators"],"unit":"named entities"}}]}
+  "result_directory": {
+    "path": "records/",
+    "additional_paths": [
+      "regulators/"
+    ],
+    "title": "Gambling licences and enforcement decisions by operator"
+  },
+  "dataset": {
+    "title": "Gambling licence and enforcement evidence",
+    "file": "data/edition.json",
+    "format": "JSON"
+  },
+  "data_info": {
+    "mode": "snapshot",
+    "cadence": "Weekly",
+    "detail": "Public licensing registers, regulatory decisions and annual reports. Source coverage and appeal status are shown for each authority.",
+    "probes": [
+      {
+        "label": "Latest source snapshot",
+        "url": "https://coolcode.ca/gamblingregulatorwatch/data/status.json",
+        "path": [
+          "edition_date"
+        ],
+        "count_at": {
+          "path": [
+            "operators"
+          ],
+          "unit": "named entities"
+        }
+      }
+    ]
+  }
 }

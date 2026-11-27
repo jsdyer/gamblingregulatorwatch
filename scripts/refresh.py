@@ -68,6 +68,12 @@ def main():
     except (OSError,ValueError,KeyError,subprocess.SubprocessError) as error:
         print(f"Retaining publication inbox after error: {error}",file=sys.stderr)
         receipt["failed_notice_indexes"]=["notice collection"]
+    warnings = subprocess.run([sys.executable,str(ROOT/"collectors/warnings.py")],cwd=ROOT,timeout=180)
+    receipt["failed_warning_lists"] = ["domain warnings"] if warnings.returncode else []
+    if warnings.returncode and previous.get("checked_at"):
+        receipt["checked_at"] = previous["checked_at"]
+    elif warnings.returncode:
+        receipt.pop("checked_at", None)
     path.write_text(json.dumps(receipt,indent=2)+"\n",encoding="utf-8")
     print(f"Validated {sum(results.values())} of {len(results)} register imports.")
 

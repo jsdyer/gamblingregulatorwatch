@@ -5,7 +5,7 @@
   "role": "Licenses and regulates gaming conducted within and from Kahnawà:ke.",
   "register_url": "https://gamingcommission.ca/interactive-gaming/permit-holders/",
   "enforcement_url": "https://gamingcommission.ca/news/",
-  "coverage": "The interactive operator and software-provider tables are grouped by named holder. The hosting licensee appears separately. The operator and software-provider scope records preserve the date displayed on the permit page. Individual issue and expiry dates are unavailable for these entries. The observation date records when a name was visible. The decisions are selected public notices for three named holders. Two-step cases count once, and a voluntary departure in good standing is shown as a separate outcome.",
+  "coverage": "The interactive operator and software-provider tables are grouped by named holder. The hosting licensee appears separately. The operator and software-provider scope records preserve the date displayed on the permit page. Individual issue and expiry dates are unavailable for these entries. The observation date records when a name was visible. The decisions are selected public notices for selected named holders. Two-step cases count once, and a voluntary departure in good standing is shown as a separate outcome.",
   "checked_at": "2026-11-27",
   "actions_checked_at": "2026-11-27",
   "licences": [
@@ -540,6 +540,37 @@
       "case_id": "kgc-vip-2024",
       "eligible": true,
       "foreign_penalty": true
+    },
+    {
+      "entity": "True North",
+      "case_id": "kgc-true-north-2024-25",
+      "eligible": true,
+      "foreign_penalty": true,
+      "id": "kgc-true-north-suspension",
+      "date": "2024-12-23",
+      "effective_date": "2024-12-23",
+      "title": "Commission suspends True North authorization",
+      "type": "Licence suspension",
+      "status": "Suspension took effect",
+      "url": "https://gamingcommission.ca/true-north-suspension-of-client-provider-authorization/",
+      "summary": "The commission suspended the authorization and directed www.truenorth.bet to cease offering interactive gaming effective 23 December 2024."
+    },
+    {
+      "entity": "True North",
+      "case_id": "kgc-true-north-2024-25",
+      "eligible": true,
+      "foreign_penalty": true,
+      "id": "kgc-true-north-revocation",
+      "date": "2025-08-21",
+      "effective_date": "2025-08-20",
+      "start_date": "2024-12-23",
+      "start_basis": "Effective suspension recorded in the earlier notice",
+      "start_url": "https://gamingcommission.ca/true-north-suspension-of-client-provider-authorization/",
+      "title": "Commission revokes True North authorization",
+      "type": "Licence revocation",
+      "status": "Authorization revoked",
+      "url": "https://gamingcommission.ca/true-north-revocation-of-client-provider-authorization/",
+      "summary": "The August notice names www.truenorthbets.com and dates revocation of True North’s authorization to 20 August 2025. The December suspension named www.truenorth.bet."
     }
   ],
   "source_versions": {
