@@ -11,7 +11,7 @@
   "hosting": "project",
   "access": "browser",
   "sync_manifest": true,
-  "result_directory": {"path": "records/", "title": "Gambling licences and enforcement decisions by operator"},
+  "result_directory": {"path": "records/", "additional_paths": ["regulators/"], "title": "Gambling licences and enforcement decisions by operator"},
   "dataset": {"title": "Gambling licence and enforcement evidence", "file":"data/edition.json", "format":"JSON"},
   "data_info": {"mode": "snapshot", "cadence": "Weekly", "detail": "Public licensing registers, regulatory decisions and annual reports. Source coverage and appeal status are shown for each authority.", "probes": [{"label":"Latest source snapshot","url":"https://coolcode.ca/gamblingregulatorwatch/data/status.json","path":["edition_date"],"count_at":{"path":["operators"],"unit":"named entities"}}]}
 }
