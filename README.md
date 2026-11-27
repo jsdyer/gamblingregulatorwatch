@@ -6,6 +6,8 @@ Explore public gambling licence and enforcement records by legal entity, trading
 Search by legal entity or a source-listed trading name. A profile links each licence and published action to its issuing authority. Compare the coverage and dates before interpreting repeat cases or documented revocation intervals.
 <!-- /coolcode:guide -->
 
+BML Group Limited’s Malta licence profile links to its historical corporate-registry entry in ICIJ and to the [CoolCode Field Note on Canadian connections in offshore records](https://coolcode.ca/field-notes/reading-offshore-records/). Corporate-registry appearances are stored separately from enforcement data.
+
 ## Reading the evidence
 
 - **Published actions** include suspensions, notices, settlements and revisions. A timeline may contain several stages of one matter. Distinct qualifying cases group eligible stages by authority, legal entity and case ID. Two cases may concern different conduct.

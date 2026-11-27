@@ -30,6 +30,17 @@
       "operator_licence": true
     },
     {
+      "entity": "BML Group Limited",
+      "licence_id": "MGA/B2C/108/2004",
+      "scope": "B2C - Gaming Service Licence",
+      "status": "Licensed",
+      "active": true,
+      "date": "2026-11-27",
+      "date_basis": "observed",
+      "url": "https://authorisation.mga.org.mt/verification.aspx?company=0ec7b461-65ad-4d99-b4de-f740a9e188c7&details=1&lang=EN",
+      "operator_licence": true
+    },
+    {
       "entity": "Condor Malta Limited",
       "licence_id": "MGA/B2C/340/2016",
       "scope": "B2C - Gaming Service Licence",
@@ -491,7 +502,8 @@
     "https://authorisation.mga.org.mt/verification.aspx?company=5394ea22-0083-4f8a-9815-f7650c8145be&details=1&lang=EN",
     "https://authorisation.mga.org.mt/verification.aspx?company=70dabc73-7b15-4350-9248-06e9aecff9cb&details=1&lang=EN",
     "https://authorisation.mga.org.mt/verification.aspx?company=4f2ce9bc-6584-440c-8643-9314defffd0e&details=1&lang=EN",
-    "https://authorisation.mga.org.mt/verification.aspx?company=1f03ea1f-18c9-49dc-b74e-7912ed310beb&details=1&lang=EN"
+    "https://authorisation.mga.org.mt/verification.aspx?company=1f03ea1f-18c9-49dc-b74e-7912ed310beb&details=1&lang=EN",
+    "https://authorisation.mga.org.mt/verification.aspx?company=0ec7b461-65ad-4d99-b4de-f740a9e188c7&details=1&lang=EN"
   ],
   "checked_at": "2026-11-27",
   "enforcement_reviewed_at": "2026-11-27",

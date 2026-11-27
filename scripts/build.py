@@ -65,7 +65,7 @@ def profile(op, regs):
     return " ".join(summary)
 
 
-def profile_page(op, regs):
+def profile_page(op, regs, note):
     summary = profile(op, regs)
     path = "records/" + op["slug"] + "/"
     rows = [f'<h1>{e(op["name"])}</h1><p>{e(summary)}</p><p>{link("../../?operator="+op["slug"]+"#operators","Open this operator in the explorer")}</p>']
@@ -107,6 +107,8 @@ def profile_page(op, regs):
             detail = " · ".join(str(x) for x in [l.get("name"), l.get("scope"), l.get("licence_id"), l.get("date"), l.get("date_basis"), ("Source effective "+l["status_as_of"]) if l.get("status_as_of") else None] if x)
             rows.append(f'<li><strong>{e(regs[l["regulator"]]["name"])}</strong> — {e(l["entity"])} · {e(l["status"])}. {e(detail)}. {official(l["url"],"Licensing source")}</li>')
         rows.append("</ul>")
+    if note:
+        rows.append(f'<h2>Historical company record</h2><p>{e(note["summary"])} {official(note["source"],"Original ICIJ entry")} · {official(note["url"],note["title"])}.</p>')
     rows.append("<h2>Coverage for this profile</h2>")
     for rid in dict.fromkeys(r["regulator"] for r in op["actions"] + op["licences"]):
         reg = regs[rid]
@@ -162,7 +164,10 @@ def render(stage, ed):
         retained = ", ".join(regs[k]["name"] for k in status["failed_sources"] if k in regs)
         schedule += " The "+status["last_attempt"][:10]+" check retained the previous snapshot for "+retained+"."
     more = e(schedule)+"</p><p>"+more
+    notes = read(ROOT/"config/field-notes.json")
     related = '<p><strong>Related investigation.</strong> '+link("https://coolcode.ca/registrarwatch/","Explore phishing reports by domain registrar")+' to see how a different industry measures reports against portfolio size.</p>'
+    for note in notes.values():
+        related += "<p>"+official(note["url"],note["title"])+"</p>"
     if 'rel="icon"' not in html:
         html=html.replace("</head>",'<link rel="icon" href="./favicon.svg"></head>')
     html = html.replace("</main>", '<section class="coverage"><div><h2>Sources and updates</h2></div><div class="coverage-copy"><p>'+more+'</p>'+related+'</div></section></main>')
@@ -170,9 +175,11 @@ def render(stage, ed):
     put(stage/"index.html",html)
     for op in ops:
         page = "records/"+op["slug"]+"/"
-        put(stage/page/"index.html",profile_page(op,regs))
+        note = next((notes[l["licence_id"]] for l in op["licences"]
+                     if l["regulator"]=="mga" and l.get("licence_id") in notes),None)
+        put(stage/page/"index.html",profile_page(op,regs,note))
         # Curate discovery around substantive decisions or cross-register evidence.
-        if op["actions"] or len({l["regulator"] for l in op["licences"]})>1:
+        if note or op["actions"] or len({l["regulator"] for l in op["licences"]})>1:
             pages.append(page)
     ordered = sorted(ops,key=lambda op:op["name"].casefold())
     anchors = [f'<li>{link("./"+op["slug"]+"/",op["name"])}</li>' for op in ordered]
