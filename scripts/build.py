@@ -109,6 +109,8 @@ def profile_page(op, regs, note):
         rows.append("</ul>")
     if note:
         rows.append(f'<h2>Historical company record</h2><p>{e(note["summary"])} {official(note["source"],"Original ICIJ entry")} · {official(note["url"],note["title"])}.</p>')
+        if trail := note.get("trail"):
+            rows.append(f'<p>{official(trail["url"], trail["title"])} in Offshore Records Atlas.</p>')
     rows.append("<h2>Coverage for this profile</h2>")
     for rid in dict.fromkeys(r["regulator"] for r in op["actions"] + op["licences"]):
         reg = regs[rid]

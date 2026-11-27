@@ -3,6 +3,10 @@
     "title": "Reading offshore company records alongside a gambling licence",
     "url": "https://coolcode.ca/field-notes/reading-offshore-records/",
     "source": "https://offshoreleaks.icij.org/nodes/55027598",
+    "trail": {
+      "url": "https://coolcode.ca/offshorerecords/trails/bml-betsson/",
+      "title": "See the shareholders and auditor on BML’s historical Malta record"
+    },
     "summary": "ICIJ’s historical Malta corporate registry entry records BML Group Limited’s incorporation on 21 October 2004. Its Paradise Papers registry snapshot ends in 2016. The gaming licence above has a separate status and observation date."
   }
 }
